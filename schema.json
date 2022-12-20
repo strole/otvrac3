@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "properties": {
+    "_id": {
+      "type": "object",
+      "default": {},
+      "title": "The _id Schema",
+      "required": ["$oid"],
+      "properties": {
+        "$oid": {
+          "type": "string",
+          "default": "",
+          "title": "The $oid Schema",
+          "examples": ["636186931b01713dde2bbe72"]
+        }
+      },
+      "examples": [
+        {
+          "$oid": "636186931b01713dde2bbe72"
+        }
+      ]
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema",
+      "examples": ["Amada Mia"]
+    },
+    "model": {
+      "type": "string",
+      "default": "",
+      "title": "The model Schema",
+      "examples": ["Lagoon Sixty 5"]
+    },
+    "type": {
+      "type": "string",
+      "default": "",
+      "title": "The type Schema",
+      "examples": ["catamaran"]
+    },
+    "year": {
+      "type": "integer",
+      "default": 0,
+      "title": "The year Schema",
+      "examples": [2021]
+    },
+    "length": {
+      "type": "string",
+      "default": "",
+      "title": "The length Schema",
+      "examples": ["21m"]
+    },
+    "beam": {
+      "type": "string",
+      "default": "",
+      "title": "The beam Schema",
+      "examples": ["10m"]
+    },
+    "cabins": {
+      "type": "integer",
+      "default": 0,
+      "title": "The cabins Schema",
+      "examples": [6]
+    },
+    "berths": {
+      "type": "integer",
+      "default": 0,
+      "title": "The berths Schema",
+      "examples": [11]
+    },
+    "wc": {
+      "type": "integer",
+      "default": 0,
+      "title": "The wc Schema",
+      "examples": [4]
+    },
+    "skipper": {
+      "type": "object",
+      "default": {},
+      "title": "The skipper Schema",
+      "required": ["name", "surname", "licence"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "",
+          "title": "The name Schema",
+          "examples": ["Mate"]
+        },
+        "surname": {
+          "type": "string",
+          "default": "",
+          "title": "The surname Schema",
+          "examples": ["Ivanov"]
+        },
+        "licence": {
+          "type": "string",
+          "default": "",
+          "title": "The licence Schema",
+          "examples": ["C524329873"]
+        }
+      },
+      "examples": [
+        {
+          "name": "Mate",
+          "surname": "Ivanov",
+          "licence": "C524329873"
+        }
+      ]
+    },
+    "base": {
+      "type": "object",
+      "default": {},
+      "title": "The base Schema",
+      "required": ["name", "number"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "default": "",
+          "title": "The name Schema",
+          "examples": ["Trogir"]
+        },
+        "number": {
+          "type": "string",
+          "default": "",
+          "title": "The number Schema",
+          "examples": ["01927393"]
+        }
+      },
+      "examples": [
+        {
+          "name": "Trogir",
+          "number": "01927393"
+        }
+      ]
+    }
+  },
+  "examples": [
+    {
+      "_id": {
+        "$oid": "636186931b01713dde2bbe72"
+      },
+      "name": "Amada Mia",
+      "model": "Lagoon Sixty 5",
+      "type": "catamaran",
+      "year": 2021,
+      "length": "21m",
+      "beam": "10m",
+      "cabins": 6,
+      "berths": 11,
+      "wc": 4,
+      "skipper": {
+        "name": "Mate",
+        "surname": "Ivanov",
+        "licence": "C524329873"
+      },
+      "base": {
+        "name": "Trogir",
+        "number": "01927393"
+      }
+    }
+  ]
+}

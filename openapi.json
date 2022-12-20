@@ -1,0 +1,350 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "defaultTitle",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5557"
+    }
+  ],
+  "paths": {
+    "/updateOne/63a11e3a4fde8b1f19863918": {
+      "put": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "beam": {
+                    "type": "string"
+                  },
+                  "skipper": {
+                    "type": "object",
+                    "properties": {
+                      "licence": {
+                        "type": "string"
+                      },
+                      "surname": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "year": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "length": {
+                    "type": "string"
+                  },
+                  "model": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "wc": {
+                    "type": "integer"
+                  },
+                  "cabins": {
+                    "type": "integer"
+                  },
+                  "berths": {
+                    "type": "integer"
+                  },
+                  "base": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n  \"name\": \"Discovery\",\r\n  \"model\": \"Lagoon 45\",\r\n  \"type\": \"catamaran\",\r\n  \"year\": 2021,\r\n  \"length\": \"15m\",\r\n  \"beam\": \"8m\",\r\n  \"cabins\": 6,\r\n  \"berths\": 11,\r\n  \"wc\": 4,\r\n  \"skipper\": {\r\n    \"name\": \"Jure\",\r\n    \"surname\": \"Ivanov\",\r\n    \"licence\": \"C524322273\"\r\n  },\r\n  \"base\": {\r\n    \"name\": \"Split\",\r\n    \"number\": \"09132937189\"\r\n  }\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "500": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/all": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/bases": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/one/63a11b8ea4b54838729e62a5": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/skippers": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/addBoat": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "beam": {
+                    "type": "string"
+                  },
+                  "skipper": {
+                    "type": "object",
+                    "properties": {
+                      "licence": {
+                        "type": "string"
+                      },
+                      "surname": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "year": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "length": {
+                    "type": "string"
+                  },
+                  "model": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "wc": {
+                    "type": "integer"
+                  },
+                  "cabins": {
+                    "type": "integer"
+                  },
+                  "berths": {
+                    "type": "integer"
+                  },
+                  "base": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n  \"name\": \"Caterpillar\",\r\n  \"model\": \"Lagoon 42\",\r\n  \"type\": \"catamaran\",\r\n  \"year\": 2021,\r\n  \"length\": \"15m\",\r\n  \"beam\": \"8m\",\r\n  \"cabins\": 6,\r\n  \"berths\": 11,\r\n  \"wc\": 4,\r\n  \"skipper\": {\r\n    \"name\": \"Jure\",\r\n    \"surname\": \"Ivanov\",\r\n    \"licence\": \"C524322273\"\r\n  },\r\n  \"base\": {\r\n    \"name\": \"Split\",\r\n    \"number\": \"09132937189\"\r\n  }\r\n}"
+                },
+                "1": {
+                  "value": "{\r\n  \"name\": \"Caterpillar\",\r\n  \"model\": \"Lagoon 42\",\r\n  \"type\": \"catamaran\",\r\n  \"year\": 2021,\r\n  \"length\": \"15m\",\r\n  \"beam\": \"8m\",\r\n  \"cabins\": 6,\r\n  \"berths\": 11,\r\n  \"wc\": 4,\r\n  \"skipper\": {\r\n    \"name\": \"Jure\",\r\n    \"surname\": \"Ivanov\",\r\n    \"licence\": \"C524322273\"\r\n  },\r\n  \"base\": {\r\n    \"name\": \"Split\",\r\n    \"number\": \"09132937189\"\r\n  }\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    },
+    "/deleteOne/63a11e184fde8b1f19863914": {
+      "delete": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "http://localhost:5557"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "http://localhost:5557"
+        }
+      ]
+    }
+  }
+}

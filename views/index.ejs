@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="College project NodeJS App" />
+    <meta
+      name="keywords"
+      content="project, NodeJS, datatable, search, catamaran, lagoon, bali, skipper"
+    />
+    <meta name="author" content="Luka Štroliga" />
+    <title><%= title %>%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="toggle-nav" id="toggle-nav">
+        <i class="material-icons">menu</i>
+      </span>
+      <!-- <div class=""> -->
+      <a href="#" class="logo"> <p>OTVRAC</p> </a>
+      <!-- </div> -->
+      <ul class="main-nav" id="main-nav">
+        <li><a href="/" class="nav-links">Home</a></li>
+        <li><a href="/datatable" class="nav-links">Datatable</a></li>
+      </ul>
+    </nav>
+
+    <div class="container1">
+      <h1>Druga laboratorijska vježba</h1>
+      <br /><br />
+      <h2>Opis licencije:</h2>
+      <p>
+        Creative Commons (CC) license is one of several public copyright
+        licenses that enable the free distribution of an otherwise copyrighted
+        work.
+      </p>
+      <br /><br />
+      <h2>Autor:</h2>
+      <p>Luka Štroliga</p>
+      <br /><br />
+      <h2>Verzija skupa:</h2>
+      <p>2.0</p>
+      <br /><br />
+      <h2>Language:</h2>
+      <p>English</p>
+      <br /><br />
+      <h2>Opis atributa koji se nalaze u skupu podataka:</h2>
+      <br />
+      <p>
+        > <strong>name: </strong> ime broda <br />
+        ><strong>model: </strong> model broda <br />
+        ><strong>type: </strong> tip broda (catamaran, monohull, MY) <br />
+        ><strong>year: </strong> godina proizvodnje <br />
+        ><strong>length: </strong> dužina broda <br />
+        ><strong>beam: </strong> širina broda <br />
+        ><strong>cabins: </strong> broj kabina <br />
+        ><strong>berths: </strong> broj kreveta <br />
+        ><strong>wc: </strong> broj WC-ova <br />
+        ><strong>skipper: </strong> skipper (ime, prezime, licenca) <br />
+        ><strong>base: </strong> matična baza broda (ime i broj) <br />
+      </p>
+      <br />
+      <a href="/json" target="_blank"
+        ><Button style="padding: 10px">Preview JSON</Button></a
+      >
+
+      <a href="/csv" target="_blank"
+        ><Button style="padding: 10px">Preview CSV</Button></a
+      >
+
+      <a href="/Boats.csv" download="Boats.csv"
+        ><Button style="padding: 10px">Download CSV</Button></a
+      >
+
+      <a href="/Boats.json" download="Boats.json"
+        ><Button style="padding: 10px">Download JSON</Button></a
+      >
+    </div>
+    <br />
+
+    <script>
+      let mainNav = document.getElementById("main-nav");
+      let toggleNav = document.getElementById("toggle-nav");
+      toggleNav.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

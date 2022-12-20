@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css"
+    />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="/javascripts/script.js"></script>
+
+    <title><%= title %>%></title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="toggle-nav" id="toggle-nav">
+        <i class="material-icons">menu</i>
+      </span>
+      <!-- <div class=""> -->
+      <a href="/" class="logo"> <p>OTVRAC</p> </a>
+      <!-- </div> -->
+      <ul class="main-nav" id="main-nav">
+        <li><a href="/" class="nav-links">Home</a></li>
+        <li><a href="/datatable" class="nav-links">Datatable</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="jumbotron text-dark mt-2 pt-2 mb-5">
+        <table id="boatsTable" class="table" style="width: 100%"></table>
+      </div>
+    </div>
+    <script>
+      let mainNav = document.getElementById("main-nav");
+      let toggleNav = document.getElementById("toggle-nav");
+      toggleNav.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
